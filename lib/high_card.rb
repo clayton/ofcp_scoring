@@ -1,0 +1,3 @@
+class HighCard
+
+end

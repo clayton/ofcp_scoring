@@ -1,0 +1,3 @@
+class FourOfAKind
+
+end
