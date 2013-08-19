@@ -1,8 +1,8 @@
 class HandFactory
-  def initialize(hand = OrganizedHand)
-    @hand = hand
+  def initialize(organizer = ChinesePokerHandOrganizer.new)
+    @organizer = organizer
   end
-  def build(organized_hand_values={})
-    @hand.new(organized_hand_values)
+  def build(hand)
+    OrganizedHand.new(@organizer.organize(hand))
   end
 end

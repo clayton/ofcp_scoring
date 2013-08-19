@@ -20,3 +20,4 @@ describe "Chinese Poker Scoring Engine" do
     sut.score(@hand_one, @hand_two)
   end
 end
+

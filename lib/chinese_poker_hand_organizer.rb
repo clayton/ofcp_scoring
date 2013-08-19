@@ -1,8 +1,4 @@
 class ChinesePokerHandOrganizer
-  def initialize(hand_factory = HandFactory.new)
-    @hand_factory = hand_factory
-  end
-
   def organize(hand)
     return "" if hand.nil?
     suits_only = Hash.new(0)
@@ -27,12 +23,12 @@ class ChinesePokerHandOrganizer
 
     sorted_ranks.sort!
 
-    @hand_factory.build(
+    {
       :ranks_only   => ranks_only,
       :suits_only   => suits_only,
       :sorted_ranks => sorted_ranks,
       :hand         => hand
-    )
+    }
 
   end
 end

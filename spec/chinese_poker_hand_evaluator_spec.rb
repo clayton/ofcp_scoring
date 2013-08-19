@@ -5,7 +5,7 @@ describe "Evaluator" do
     @hand_one = %w(Ah Ks Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
     @hand_two = %w(9h 9c Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
     @hand = Struct.new(:front,:middle, :back)
-    @sut = ChinesePokerHandEvaluator.new(FakeCategorizer.new)
+    @sut = ChinesePokerHandEvaluator.new(FakeFactory.new)
   end
   it "should evaluate the front hands" do
     expect(@sut.evaluate(@hand.new(1,0,0), @hand.new(0,0,0))).to eq([1,0])
@@ -21,8 +21,8 @@ describe "Evaluator" do
   end
 end
 
-class FakeCategorizer
-  def categorize(hand)
+class FakeFactory
+  def build(hand)
       hand
   end
 
