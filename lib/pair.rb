@@ -1,3 +1,3 @@
-class Pair
+class Pair < RankedHand
 
 end

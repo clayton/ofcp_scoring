@@ -16,6 +16,8 @@ RSpec.configure do |config|
   config.order = 'random'
 end
 
-Dir[File.join(File.dirname(__FILE__), '..', 'lib', '{**}')].each do |file|
-  require File.join(file)
-end
+require File.join(File.dirname(__FILE__), '..', 'lib', 'openfacechinesepoker')
+
+# Dir[File.join(File.dirname(__FILE__), '..', 'lib', '{**}')].each do |file|
+#   require File.join(file)
+# end

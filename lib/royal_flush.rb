@@ -1,0 +1,3 @@
+class RoyalFlush < RankedHand
+
+end

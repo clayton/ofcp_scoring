@@ -1,3 +1,3 @@
-class ThreeOfAKind
+class ThreeOfAKind < RankedHand
 
 end

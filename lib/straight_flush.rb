@@ -1,0 +1,3 @@
+class StraightFlush < RankedHand
+
+end

@@ -1,3 +1,3 @@
-class FullHouse
+class FullHouse < RankedHand
 
 end

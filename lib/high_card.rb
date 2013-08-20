@@ -1,3 +1,3 @@
-class HighCard
+class HighCard < RankedHand
 
 end

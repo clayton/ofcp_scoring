@@ -1,3 +1,3 @@
-class Straight
+class Straight < RankedHand
 
 end

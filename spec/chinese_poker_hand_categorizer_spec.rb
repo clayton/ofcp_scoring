@@ -24,7 +24,6 @@ describe "Hand Categorization" do
   end
 
   it "should categorize organized poker hands" do
-
     organizer = double(ChinesePokerHandOrganizer, :organize => FakeOrganizedHand.new)
     organizer.should_receive(:organize).with(%w(Ac))
 
@@ -37,44 +36,64 @@ describe "Hand Categorization" do
       expect(@sut.categorize(nil)).to eq("")
     end
     it "should return a Pair when two cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(true))
-      expect(@sut.categorize(%w(Ah Ac Jh 5d 9c))).to be_a(Pair)
+      hand = FakeOrganizedHand.new(true)
+      @organizer.stub(:organize).and_return(hand)
+      Pair.should_receive(:new).with(hand)
+      @sut.categorize(%w(Ah Ac Jh 5d 9c))
     end
     it "should return two Pair when two sets of two cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(true, true))
-      expect(@sut.categorize(%w(Ah Ac Kh Kc 9d))).to be_a(TwoPair)
+      hand = FakeOrganizedHand.new(true, true)
+      @organizer.stub(:organize).and_return(hand)
+      TwoPair.should_receive(:new).with(hand)
+      @sut.categorize(%w(Ah Ac Kh Kc 9d))
     end
     it "should return Three Of a Kind when three cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, true))
-      expect(@sut.categorize(%w(Ah Jc Jh Jd 9c))).to be_a(ThreeOfAKind)
+      hand = FakeOrganizedHand.new(false, false, true)
+      @organizer.stub(:organize).and_return(hand)
+      ThreeOfAKind.should_receive(:new).with(hand)
+      @sut.categorize(%w(Ah Jc Jh Jd 9c))
     end
     it "should return Four of a kind when four cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, true))
-      expect(@sut.categorize(%w(Js Jc Jh Jd 9c))).to be_a(FourOfAKind)
+      hand = FakeOrganizedHand.new(false, false, false, true)
+      @organizer.stub(:organize).and_return(hand)
+      FourOfAKind.should_receive(:new).with(hand)
+      @sut.categorize(%w(Js Jc Jh Jd 9c))
     end
     it "should return Full House when three cards match and two cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(true, false, true))
-      expect(@sut.categorize(%w(Js Jc Jh 9d 9c))).to be_a(FullHouse)
+      hand = FakeOrganizedHand.new(true, false, true)
+      @organizer.stub(:organize).and_return(hand)
+      FullHouse.should_receive(:new).with(hand)
+      @sut.categorize(%w(Js Jc Jh 9d 9c))
     end
     it "should return High Card when no cards match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, false))
-      expect(@sut.categorize(%w(Js Ac 7h 8d 9c))).to be_a(HighCard)
+      hand = FakeOrganizedHand.new(false, false, false, false)
+      @organizer.stub(:organize).and_return(hand)
+      HighCard.should_receive(:new).with(hand)
+      @sut.categorize(%w(Js Ac 7h 8d 9c))
     end
     it "should return Flush when suits all same" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, false, true))
-      expect(@sut.categorize(%w(2h 3h 5h Kh Jh))).to be_a(Flush)
+      hand = FakeOrganizedHand.new(false, false, false, false, true)
+      @organizer.stub(:organize).and_return(hand)
+      Flush.should_receive(:new).with(hand)
+      @sut.categorize(%w(2h 3h 5h Kh Jh))
     end
     it "should return Straight when all five cards are in sequential order" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, false, false, true))
-      expect(@sut.categorize(%w(2c 3d 4d 5c 6h))).to be_a(Straight)
+      hand = FakeOrganizedHand.new(false, false, false, false, false, true)
+      @organizer.stub(:organize).and_return(hand)
+      Straight.should_receive(:new).with(hand)
+      @sut.categorize(%w(2c 3d 4d 5c 6h))
     end
     it "should return a Straight Flush when all five cards are in sequential order and all suits match" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, false, true, true))
-      expect(@sut.categorize(%w(2c 3d 4d 5c 6h))).to be_a(StraightFlush)
+      hand = FakeOrganizedHand.new(false, false, false, false, true, true)
+      @organizer.stub(:organize).and_return(hand)
+      StraightFlush.should_receive(:new).with(hand)
+      @sut.categorize(%w(2c 3d 4d 5c 6h))
     end
     it "should return a Royal Flush when all five cards are in sequential order, all suits match and highest rank is an Ace" do
-      @organizer.stub(:organize).and_return(FakeOrganizedHand.new(false, false, false, false, true, true, true))
-      expect(@sut.categorize(%w(Ac Kc Qc Jc 10c))).to be_a(RoyalFlush)
+      hand = FakeOrganizedHand.new(false, false, false, false, true, true, true)
+      @organizer.stub(:organize).and_return(hand)
+      RoyalFlush.should_receive(:new).with(hand)
+      @sut.categorize(%w(Ac Kc Qc Jc 10c))
     end
   end
   context "Three Card Hands" do

@@ -1,3 +1,3 @@
-class FourOfAKind
+class FourOfAKind < RankedHand
 
 end
