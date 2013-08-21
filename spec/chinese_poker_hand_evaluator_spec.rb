@@ -11,14 +11,15 @@ describe "Evaluator" do
     expect(@sut.evaluate(@hand.new(1,0,0), @hand.new(0,0,0))).to eq([1,0])
   end
   it "should evaluate the middle hands" do
-    expect(@sut.evaluate(@hand.new(1,1,0), @hand.new(0,0,0))).to eq([2,0])
+    expect(@sut.evaluate(@hand.new(1,0,0), @hand.new(0,1,0))).to eq([1,1])
   end
   it "should evaluate the back hands" do
-    expect(@sut.evaluate(@hand.new(1,1,1), @hand.new(0,0,0))).to eq([3,0])
+    expect(@sut.evaluate(@hand.new(1,1,0), @hand.new(0,0,1))).to eq([2,1])
   end
-  it "should evaluate the score of the losing hand" do
-    expect(@sut.evaluate(@hand.new(0,0,0), @hand.new(1,1,1))).to eq([0,3])
+  it "should add a scoop bonus" do
+    expect(@sut.evaluate(@hand.new(1,1,1), @hand.new(0,0,0))).to eq([6,0])
   end
+
 end
 
 describe "Integration" do
