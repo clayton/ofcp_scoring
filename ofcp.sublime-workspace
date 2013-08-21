@@ -4,12 +4,120 @@
 		"selected_items":
 		[
 			[
-				"Hand",
-				"HandOrganizer"
+				"higest",
+				"highest_card"
+			],
+			[
+				"three",
+				"three_card_hand"
+			],
+			[
+				"thre",
+				"three_cards_match"
+			],
+			[
+				"all",
+				"all_suits_match"
+			],
+			[
+				"two",
+				"two_different_cards_match"
+			],
+			[
+				"Four",
+				"FourOfAKind"
+			],
+			[
+				"Str",
+				"StraightFlush"
+			],
+			[
+				"or",
+				"organized_hand"
+			],
+			[
+				"four",
+				"four_cards_match"
+			],
+			[
+				"three_c",
+				"three_cards_match"
+			],
+			[
+				"ca",
+				"categorize"
+			],
+			[
+				"cate",
+				"categorizer"
+			],
+			[
+				"categ",
+				"categorizer"
+			],
+			[
+				"high",
+				"highcard"
+			],
+			[
+				"ranks",
+				"ranks_in_order"
+			],
+			[
+				"al",
+				"all_suits_match"
+			],
+			[
+				"organiz",
+				"organized_hand"
+			],
+			[
+				"organ",
+				"organized_hand"
+			],
+			[
+				"fake",
+				"fake_two_pair"
+			],
+			[
+				"Chinese",
+				"ChinesePokerHandCategorizer"
+			],
+			[
+				"Chin",
+				"ChinesePokerHandOrganizer"
+			],
+			[
+				"Chines",
+				"ChinesePokerHandCategorizer"
 			],
 			[
 				"cla",
 				"cla	class .. end"
+			],
+			[
+				"cl",
+				"cla	class .. end"
+			],
+			[
+				"special",
+				"SpecialCategorizer"
+			],
+			[
+				"hand_",
+				"hand_two"
+			],
+			[
+				"hand",
+				"hand_one"
+			],
+			[
+				"sco",
+				"score_against"
+			],
+			[
+				"Hand",
+				"HandOrganizer"
 			],
 			[
 				"Open",
@@ -299,11 +407,51 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lib/chinese_poker_hand_evaluator.rb",
+			"settings":
+			{
+				"buffer_size": 614,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/organized_hand.rb",
+			"settings":
+			{
+				"buffer_size": 329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/ranked_hand_spec.rb",
+			"settings":
+			{
+				"buffer_size": 976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/chinese_poker_hand_organizer.rb",
+			"settings":
+			{
+				"buffer_size": 1408,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/chinese_poker_hand_categorizer_spec.rb",
+			"settings":
+			{
+				"buffer_size": 4647,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/rbenv/RBenv.sublime-build",
 	"command_palette":
 	{
-		"height": 347.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -472,24 +620,50 @@
 	},
 	"file_history":
 	[
+		"/Users/clayton/Projects/openfacechinesepoker/lib/ranked_hand.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/chinese_poker_hand_categorizer.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_hand_categorizer_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/high_card.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/pair.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/two_pair.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/full_house.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/four_of_a_kind.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/three_of_a_kind.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/straight.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/straight_flush.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/royal_flush.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/openfacechinesepoker.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/spec_helper.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/ranked_hand_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/organized_hand_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/chinese_poker_hand_evaluator.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/organized_hand.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/hand_factory.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/chinese_poker_hand_organizer.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/chinese_poker_scoring_engine.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_scoring_engine_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/hand_factory_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_hand_evaluator_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_hand_organizer_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/hand_ranker_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/flush.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/two_pair.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/lib:pair.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_hand_categorizer.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/acceptance_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/hand_scorer.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/hand_scorer_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/chinese_poker_hand.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/spec/scorable_hand_spec.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/spec/chinese_poker_hand_spec.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/scorable_hand.rb",
+		"/Users/clayton/Projects/openfacechinesepoker/lib/hand_categorizer.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/lib/poker_hand.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/spec/poker_hand_spec.rb",
 		"/Users/clayton/Pearson/gamecenter/css/application.css",
 		"/Users/clayton/Pearson/gamecenter/grade.html.erb",
 		"/Users/clayton/Projects/openfacechinesepoker/lib/hand_organizer.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/spec/hand_organizer_spec.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/hand_categorizer.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/spec/hand_ranker_spec.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/full_house.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/spec/spec_helper.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/straight.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/flush.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/four_of_a_kind.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/three_of_a_kind.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/pair.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/two_pair.rb",
-		"/Users/clayton/Projects/openfacechinesepoker/lib/high_card.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/spec/open_face_chinese_poker_hand_spec.rb",
 		"/Users/clayton/Projects/openfacechinesepoker/lib/poker_hand_ranker.rb",
 		"/Users/clayton/Pearson/mymathuniverse-cms/config/deploy/production.rb",
@@ -573,33 +747,7 @@
 		"/Users/clayton/Pearson/mymathuniverse-cms/app/models/program_update.rb",
 		"/Users/clayton/Pearson/mymathuniverse-cms/app/models/channel_group.rb",
 		"/Users/clayton/Pearson/mymathuniverse-cms/app/uploaders/pdf_file_preview_image_uploader.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/config/application.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/uploaders/link_preview_image_uploader.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/shared/_channel_theme_css.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/channel_groups/_form.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/channel_content_items/_link_form.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/admin/channel_content_items_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/channel_content_items/_html_form.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/assets/stylesheets/admin/admin.css.scss",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/assets/stylesheets/shared/shared_channels.css.scss",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/channel_groups/edit.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/admin/channel_groups_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/models/channel_program.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/uploaders/channel_content_item_thumbnail_uploader.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/helpers/application_helper.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/models/program_resource.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/models/program_media_gallery_item.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/views/admin/program_media_gallery_items/_form.html.erb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/channel_content_items_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/db/migrate/20130729215512_add_featured_to_channel_content_items.rb",
-		"/Users/clayton/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/admin_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/programs_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/admin/program_media_gallery_items_controller.rb",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/assets/stylesheets/admin.css",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/assets/stylesheets/admin/program_media_gallery_items.css.scss",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/assets/stylesheets/sidebar.css.scss",
-		"/Users/clayton/Pearson/mymathuniverse-cms/app/controllers/admin/program_resources_controller.rb"
+		"/Users/clayton/Pearson/mymathuniverse-cms/config/application.rb"
 	],
 	"find":
 	{
@@ -643,6 +791,49 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			") if",
+			")",
+			"two_different_cards_match",
+			"?",
+			"ranks",
+			".rb",
+			".new",
+			"organizer",
+			"categorize",
+			"organized_hand",
+			"hand_factory",
+			"new",
+			"ranks_only",
+			"suits_only",
+			"sorted_ranks",
+			"poker_hand",
+			"categorize",
+			"pending # ",
+			"cards",
+			"rank",
+			"expect",
+			"+",
+			"expect",
+			"+",
+			"(1,1,1)",
+			"hand_two",
+			"hand_one",
+			"front",
+			"score[0] += 1",
+			"score",
+			"sut.",
+			"@poker_hand.",
+			"front",
+			"Comparator",
+			"RankedHand",
+			"bottom_rank",
+			"middle_rank",
+			"top_rank",
+			"Pair",
+			"ThreeOfAKind",
+			"hand_2",
+			"hand_1",
+			"hand",
 			" * ",
 			"sorted_ranks",
 			"ranks_only",
@@ -727,50 +918,7 @@
 			"@program",
 			"program",
 			"@channel_content_item",
-			"channel_content_item",
-			"%w(pdf)",
-			"admin_channel_channel_group_channel_content_item",
-			"channel_group",
-			"\"pdf_content_item[pdf_file]\"",
-			"_tag",
-			"\"video_content_item[autoplay]\"",
-			"_tag",
-			"\"video_content_item[ogv_file]\"",
-			"\"video_content_item[webm_file]\"",
-			"@pdf_content_item",
-			"@video_content_item",
-			"video_content_item",
-			"thumbnail",
-			"thumb",
-			"pdf_pr",
-			"autoplay",
-			"ogv_file",
-			"mp4_file",
-			"pdf_file",
-			"pdf_content_item",
-			"mp4_file",
-			"pdf_file",
-			"pdf_content_item",
-			"video",
-			"thumbnail",
-			"icon",
-			"channel_content_item",
-			"pdf",
-			"\"radio\"",
-			"radio",
-			"icon",
-			"program_resource",
-			"@channel_group",
-			"(channel)",
-			"channel",
-			"{:channel_content_item",
-			":channel_content_item",
-			"channel, {:channel",
-			"admin_channel_path",
-			"channel",
-			"Program Resource",
-			"theme_signin_background_color",
-			"@program"
+			"channel_content_item"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -778,6 +926,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ScorableHand",
+			"back",
+			"middle",
+			"front",
 			"",
 			"myMath Universe",
 			"mymathuniverse",
@@ -888,8 +1040,154 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lib/chinese_poker_hand_evaluator.rb",
+					"settings":
+					{
+						"buffer_size": 614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								603
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/organized_hand.rb",
+					"settings":
+					{
+						"buffer_size": 329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/ranked_hand_spec.rb",
+					"settings":
+					{
+						"buffer_size": 976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								912,
+								912
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/RSpec/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/chinese_poker_hand_organizer.rb",
+					"settings":
+					{
+						"buffer_size": 1408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/chinese_poker_hand_categorizer_spec.rb",
+					"settings":
+					{
+						"buffer_size": 4647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								206
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/RSpec/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -939,16 +1237,404 @@
 		"selected_items":
 		[
 			[
+				"catespec",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"organizer",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"categor",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"ranke",
+				"spec/ranked_hand_spec.rb"
+			],
+			[
+				"rank",
+				"lib/ranked_hand.rb"
+			],
+			[
+				"orga",
+				"lib/organized_hand.rb"
+			],
+			[
+				"handeva",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"caterb",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"handcatspec",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"roy",
+				"lib/royal_flush.rb"
+			],
+			[
+				"strflu",
+				"lib/straight_flush.rb"
+			],
+			[
+				"strai",
+				"lib/straight.rb"
+			],
+			[
+				"three",
+				"lib/three_of_a_kind.rb"
+			],
+			[
+				"four",
+				"lib/four_of_a_kind.rb"
+			],
+			[
+				"full",
+				"lib/full_house.rb"
+			],
+			[
+				"twopa",
+				"lib/two_pair.rb"
+			],
+			[
+				"pair",
+				"lib/pair.rb"
+			],
+			[
+				"highcar",
+				"lib/high_card.rb"
+			],
+			[
+				"handcateg",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"speche",
+				"spec/spec_helper.rb"
+			],
+			[
+				"open",
+				"lib/openfacechinesepoker.rb"
+			],
+			[
+				"handcate",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"organhanspec",
+				"spec/organized_hand_spec.rb"
+			],
+			[
+				"ranked",
+				"spec/ranked_hand_spec.rb"
+			],
+			[
+				"handorgani",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"organspec",
+				"spec/organized_hand_spec.rb"
+			],
+			[
+				"handfa",
+				"lib/hand_factory.rb"
+			],
+			[
+				"eval",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"organihand",
+				"lib/organized_hand.rb"
+			],
+			[
+				"orhaspec",
+				"spec/organized_hand_spec.rb"
+			],
+			[
+				"organhan",
+				"lib/organized_hand.rb"
+			],
+			[
+				"organ",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"handfac",
+				"lib/hand_factory.rb"
+			],
+			[
+				"evaluator",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"cpse",
+				"lib/chinese_poker_scoring_engine.rb"
+			],
+			[
+				"cpsespec",
+				"spec/chinese_poker_scoring_engine_spec.rb"
+			],
+			[
+				"cpsesp",
+				"spec/chinese_poker_scoring_engine_spec.rb"
+			],
+			[
+				"handorspec",
+				"spec/chinese_poker_hand_organizer_spec.rb"
+			],
+			[
+				"handorg",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"handfspec",
+				"spec/hand_factory_spec.rb"
+			],
+			[
+				"evalspec",
+				"spec/chinese_poker_hand_evaluator_spec.rb"
+			],
+			[
+				"organiz",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"handeval",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"cpengine",
+				"lib/chinese_poker_scoring_engine.rb"
+			],
+			[
+				"organizerspec",
+				"spec/chinese_poker_hand_organizer_spec.rb"
+			],
+			[
+				"handf",
+				"lib/hand_factory.rb"
+			],
+			[
+				"hand",
+				"spec/hand_factory_spec.rb"
+			],
+			[
+				"catego",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"scor",
+				"lib/chinese_poker_scoring_engine.rb"
+			],
+			[
+				"chinorspec",
+				"spec/chinese_poker_hand_organizer_spec.rb"
+			],
+			[
+				"handor",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"categori",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"handcatespec",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"cpesp",
+				"spec/chinese_poker_hand_evaluator_spec.rb"
+			],
+			[
+				"orspec",
+				"spec/organized_hand_spec.rb"
+			],
+			[
+				"or",
+				"lib/organized_hand.rb"
+			],
+			[
+				"hf",
+				"lib/hand_factory.rb"
+			],
+			[
+				"orh",
+				"lib/organized_hand.rb"
+			],
+			[
+				"catspec",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"cpho",
+				"lib/chinese_poker_hand_organizer.rb"
+			],
+			[
+				"categ",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"cheng",
+				"spec/chinese_poker_scoring_engine_spec.rb"
+			],
+			[
+				"cate",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"eva",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"engi",
+				"lib/chinese_poker_scoring_engine.rb"
+			],
+			[
+				"chanca",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"handcaspec",
+				"spec/chinese_poker_hand_categorizer_spec.rb"
+			],
+			[
+				"handra",
+				"spec/hand_ranker_spec.rb"
+			],
+			[
+				"hanrank",
+				"spec/hand_ranker_spec.rb"
+			],
+			[
+				"hig",
+				"lib/high_card.rb"
+			],
+			[
+				"thr",
+				"lib/three_of_a_kind.rb"
+			],
+			[
+				"ful",
+				"lib/full_house.rb"
+			],
+			[
+				"two",
+				"lib/two_pair.rb"
+			],
+			[
+				"st",
+				"lib/straight.rb"
+			],
+			[
+				"fl",
+				"lib/flush.rb"
+			],
+			[
+				"handevspec",
+				"spec/chinese_poker_hand_evaluator_spec.rb"
+			],
+			[
+				"c",
+				"spec/chinese_poker_scoring_engine_spec.rb"
+			],
+			[
+				"cphc",
+				"lib/chinese_poker_hand_categorizer.rb"
+			],
+			[
+				"cphesp",
+				"spec/chinese_poker_hand_evaluator_spec.rb"
+			],
+			[
 				"chine",
+				"lib/chinese_poker_hand_evaluator.rb"
+			],
+			[
+				"acce",
+				"spec/acceptance_spec.rb"
+			],
+			[
+				"ch",
+				"lib/chinese_poker_scoring_engine.rb"
+			],
+			[
+				"chin",
+				"spec/chinese_poker_scoring_engine_spec.rb"
+			],
+			[
+				"accep",
+				"spec/acceptance_spec.rb"
+			],
+			[
+				"scora",
+				"spec/scorable_hand_spec.rb"
+			],
+			[
+				"handsco",
+				"spec/hand_scorer_spec.rb"
+			],
+			[
+				"handscor",
+				"lib/hand_scorer.rb"
+			],
+			[
+				"score",
+				"spec/scorable_hand_spec.rb"
+			],
+			[
+				"chinpokehandsp",
 				"spec/chinese_poker_hand_spec.rb"
+			],
+			[
+				"chinese",
+				"lib/chinese_poker_hand.rb"
+			],
+			[
+				"sc",
+				"lib/scorable_hand.rb"
+			],
+			[
+				"pokerhanspec",
+				"spec/chinese_poker_hand_spec.rb"
+			],
+			[
+				"scorable",
+				"spec/scorable_hand_spec.rb"
+			],
+			[
+				"chinepokhandspec",
+				"spec/chinese_poker_hand_spec.rb"
+			],
+			[
+				"chinesepoerhand",
+				"spec/chinese_poker_hand_spec.rb"
+			],
+			[
+				"acces",
+				"spec/acceptance_spec.rb"
+			],
+			[
+				"handscospec",
+				"spec/hand_scorer_spec.rb"
+			],
+			[
+				"handsc",
+				"lib/hand_scorer.rb"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
 			],
 			[
 				"pokerhand",
 				"lib/poker_hand.rb"
-			],
-			[
-				"pokerhanspec",
-				"spec/poker_hand_spec.rb"
 			],
 			[
 				"grad",
@@ -959,24 +1645,12 @@
 				"css/application.css"
 			],
 			[
-				"handor",
-				"spec/hand_organizer_spec.rb"
-			],
-			[
 				"handca",
 				"lib/hand_categorizer.rb"
 			],
 			[
 				"_spec",
 				"spec/hand_ranker_spec.rb"
-			],
-			[
-				"handcate",
-				"lib/hand_categorizer.rb"
-			],
-			[
-				"handorspec",
-				"spec/hand_organizer_spec.rb"
 			],
 			[
 				"pokerhandspec",
@@ -987,10 +1661,6 @@
 				"lib/poker_hand.rb"
 			],
 			[
-				"spec",
-				"spec/spec_helper.rb"
-			],
-			[
 				"fullhou",
 				"lib/full_house.rb"
 			],
@@ -999,20 +1669,8 @@
 				"lib/high_card.rb"
 			],
 			[
-				"two",
-				"lib/two_pair.rb"
-			],
-			[
-				"pair",
-				"lib/pair.rb"
-			],
-			[
 				"thre",
 				"lib/three_of_a_kind.rb"
-			],
-			[
-				"four",
-				"lib/four_of_a_kind.rb"
 			],
 			[
 				"flus",
@@ -1021,14 +1679,6 @@
 			[
 				"sta",
 				"lib/straight.rb"
-			],
-			[
-				"hand",
-				"lib/hand_categorizer.rb"
-			],
-			[
-				"open",
-				"spec/open_face_chinese_poker_hand_spec.rb"
 			],
 			[
 				"pokerha",
@@ -1097,358 +1747,6 @@
 			[
 				"programsshow",
 				"app/views/programs/show.html.erb"
-			],
-			[
-				"programcsserb",
-				"app/views/programs/show.css.erb"
-			],
-			[
-				"themeshtml",
-				"app/views/shared/_theme_stylesheets.html.erb"
-			],
-			[
-				"programthemecss",
-				"app/views/shared/_program_theme_css.html.erb"
-			],
-			[
-				"channtheme",
-				"app/views/shared/_channel_theme_css.html.erb"
-			],
-			[
-				"channthemecss",
-				"app/views/shared/_channel_theme_css.html.erb"
-			],
-			[
-				"themest",
-				"app/controllers/theme_stylesheets_controller.rb"
-			],
-			[
-				"channshowcss",
-				"app/views/channels/show.css.erb"
-			],
-			[
-				"themestyehtml",
-				"app/views/shared/_theme_stylesheets.html.erb"
-			],
-			[
-				"theme",
-				"app/models/theme_stylesheet.rb"
-			],
-			[
-				"applicahtml",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"show.htm",
-				"app/views/channels/show.html.erb"
-			],
-			[
-				"channelcontroller",
-				"app/controllers/admin/channels_controller.rb"
-			],
-			[
-				"_form.",
-				"app/views/admin/channels/_form.html.erb"
-			],
-			[
-				"edit.",
-				"app/views/admin/channels/edit.html.erb"
-			],
-			[
-				"speche",
-				"spec/spec_helper.rb"
-			],
-			[
-				"dat",
-				"config/database.yml"
-			],
-			[
-				"rake",
-				"Rakefile"
-			],
-			[
-				"spechel",
-				"spec/spec_helper.rb"
-			],
-			[
-				"deplo",
-				"config/deploy.rb"
-			],
-			[
-				"themestycon",
-				"app/controllers/admin/theme_stylesheets_controller.rb"
-			],
-			[
-				"themesty",
-				"app/models/theme_stylesheet.rb"
-			],
-			[
-				"datepic",
-				"app/views/admin/shared/_date_picker.html.erb"
-			],
-			[
-				"themestform",
-				"app/views/admin/theme_stylesheets/_form.html.erb"
-			],
-			[
-				"channrb",
-				"app/models/channel.rb"
-			],
-			[
-				"themes",
-				"app/models/theme_stylesheet.rb"
-			],
-			[
-				"programthemebann",
-				"app/views/shared/_program_theme_banner.html.erb"
-			],
-			[
-				"progrindex",
-				"app/views/programs/index.html.erb"
-			],
-			[
-				"programcons",
-				"app/models/program_constraint.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
-				"applihtml",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"footer",
-				"app/views/shared/_footer.html.erb"
-			],
-			[
-				"techsi",
-				"app/views/shared/_tech_support_sidebar.html.erb"
-			],
-			[
-				"sched",
-				"config/schedule.rb"
-			],
-			[
-				"dep",
-				"config/deploy.rb"
-			],
-			[
-				"channform",
-				"app/views/admin/channels/_form.html.erb"
-			],
-			[
-				"feature",
-				"app/views/channel_content_items/_featured_content.html.erb"
-			],
-			[
-				"channconitemrb",
-				"app/models/channel_content_item.rb"
-			],
-			[
-				"posterim",
-				"app/uploaders/video_poster_image_uploader.rb"
-			],
-			[
-				"channscss",
-				"app/assets/stylesheets/channels.css.scss"
-			],
-			[
-				"proshow",
-				"app/views/programs/show.html.erb"
-			],
-			[
-				"backup",
-				"config/backups/models/mmu_backup.rb"
-			],
-			[
-				"read",
-				"README.md"
-			],
-			[
-				"data",
-				"config/database.yml"
-			],
-			[
-				"mmuback",
-				"config/backups/models/mmu_backup.rb"
-			],
-			[
-				"stag",
-				"config/deploy/staging.rb"
-			],
-			[
-				"prod",
-				"config/deploy/production.rb"
-			],
-			[
-				"prograconstra",
-				"app/models/program_constraint.rb"
-			],
-			[
-				"gemf",
-				"Gemfile"
-			],
-			[
-				"channshowhtml",
-				"app/views/channels/show.html.erb"
-			],
-			[
-				"channformhtml",
-				"app/views/admin/channel_content_items/_form.html.erb"
-			],
-			[
-				"backupcon",
-				"config/backups/config.rb"
-			],
-			[
-				"mmu",
-				"config/models/mmu_backup.rb"
-			],
-			[
-				"config",
-				"config/backup/config.rb"
-			],
-			[
-				"staging",
-				"config/deploy/staging.rb"
-			],
-			[
-				"produc",
-				"config/deploy/production.rb"
-			],
-			[
-				"resourside",
-				"app/views/shared/_resource_sidebar.html.erb"
-			],
-			[
-				"prograjs",
-				"app/assets/javascripts/programs.js.coffee"
-			],
-			[
-				"programrb",
-				"app/models/program.rb"
-			],
-			[
-				"schema",
-				"db/schema.rb"
-			],
-			[
-				"pdffileu",
-				"app/uploaders/pdf_content_item_file_uploader.rb"
-			],
-			[
-				"progscsc",
-				"app/assets/stylesheets/programs.css.scss"
-			],
-			[
-				"channjs",
-				"app/assets/javascripts/channels.js.coffee"
-			],
-			[
-				"programjs",
-				"app/assets/javascripts/programs.js.coffee"
-			],
-			[
-				"chanconitemedit",
-				"app/views/admin/channel_content_items/edit.html.erb"
-			],
-			[
-				"channgrshow",
-				"app/views/admin/channel_groups/show.html.erb"
-			],
-			[
-				"_progr",
-				"app/views/admin/programs/_programs_table.html.erb"
-			],
-			[
-				"show.",
-				"app/views/admin/programs/show.html.erb"
-			],
-			[
-				"channel_group_table",
-				"app/views/admin/channels/_channel_group_table.html.erb"
-			],
-			[
-				"sho",
-				"app/views/admin/channels/show.html.erb"
-			],
-			[
-				"show",
-				"app/views/channels/show.html.erb"
-			],
-			[
-				"channtable",
-				"app/views/admin/channels/_channels_table.html.erb"
-			],
-			[
-				"prograscss",
-				"app/assets/stylesheets/programs.css.scss"
-			],
-			[
-				"programcont",
-				"app/controllers/admin/programs_controller.rb"
-			],
-			[
-				"_form",
-				"app/views/admin/programs/_form.html.erb"
-			],
-			[
-				"new.html",
-				"app/views/admin/channels/new.html.erb"
-			],
-			[
-				"channel",
-				"app/models/channel.rb"
-			],
-			[
-				"chann",
-				"app/helpers/channels_helper.rb"
-			],
-			[
-				"_feature",
-				"app/views/channel_content_items/_featured_content.html.erb"
-			],
-			[
-				"sort",
-				"app/models/sortable.rb"
-			],
-			[
-				"_featur",
-				"app/views/channel_content_items/_featured_content.html.erb"
-			],
-			[
-				"show.html",
-				"app/views/channels/show.html.erb"
-			],
-			[
-				"adminhtml",
-				"app/views/layouts/admin.html.erb"
-			],
-			[
-				"appht",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"chanconitemform",
-				"app/views/admin/channel_content_items/_form.html.erb"
-			],
-			[
-				"stylecontor",
-				"app/controllers/theme_stylesheets_controller.rb"
-			],
-			[
-				"showcss",
-				"app/views/theme_stylesheets/show.css.erb"
-			],
-			[
-				"chanthemcss",
-				"app/views/shared/_channel_theme_css.html.erb"
-			],
-			[
-				"sidebar",
-				"app/assets/stylesheets/shared/sidebar.css.scss"
 			]
 		],
 		"width": 0.0

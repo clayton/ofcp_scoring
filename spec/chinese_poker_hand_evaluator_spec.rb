@@ -21,6 +21,16 @@ describe "Evaluator" do
   end
 end
 
+describe "Integration" do
+  it "should score front, middle and back hands" do
+    @hand_one = %w(Ah Ks Qs 8s 8d 7d 6c 8h Jc Jd Ad 2c 4d)
+    @hand_two = %w(9h 6c Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
+
+    sut = ChinesePokerHandEvaluator.new
+    expect(sut.evaluate(@hand_one, @hand_two)).to eq([1,2])
+  end
+end
+
 class FakeFactory
   def build(hand)
       hand

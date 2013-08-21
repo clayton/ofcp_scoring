@@ -1,18 +1,21 @@
 class OrganizedHand
+
   def initialize(hand, categorizer = ChinesePokerHandCategorizer.new)
-    @hand = hand
+    @front       = hand[:front]
+    @middle      = hand[:middle]
+    @back        = hand[:back]
     @categorizer = categorizer
   end
 
   def front
-    @categorizer.categorize(@hand[0..2])
+    @categorizer.categorize(@front)
   end
 
   def middle
-    @categorizer.categorize(@hand[3..7])
+    @categorizer.categorize(@middle)
   end
 
   def back
-    @categorizer.categorize(@hand[8..12])
+    @categorizer.categorize(@back)
   end
 end
