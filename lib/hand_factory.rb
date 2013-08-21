@@ -1,12 +1,12 @@
 class HandFactory
-  def initialize(organizer = ChinesePokerHandOrganizer.new)
-    @organizer = organizer
+  def initialize(categorizer = ChinesePokerHandCategorizer.new)
+    @categorizer = categorizer
   end
   def build(hand)
-    OrganizedHand.new({
-      :front  => @organizer.organize(hand[0..2]),
-      :middle => @organizer.organize(hand[3..7]),
-      :back   => @organizer.organize(hand[8..12])
+    ChinesePokerHand.new({
+      :front  => @categorizer.categorize(hand[0..2]),
+      :middle => @categorizer.categorize(hand[3..7]),
+      :back   => @categorizer.categorize(hand[8..12])
     })
   end
 end

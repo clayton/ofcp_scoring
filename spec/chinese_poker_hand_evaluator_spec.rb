@@ -23,7 +23,7 @@ end
 
 describe "Integration" do
   it "should score front, middle and back hands" do
-    @hand_one = %w(Ah Ks Qs 8s 8d 7d 6c 8h Jc Jd Ad 2c 4d)
+    @hand_one = %w(Ah Ks Qs 8s 8d 7d 6c 4h Jc Jd Ad 2c 4d)
     @hand_two = %w(9h 6c Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
 
     sut = ChinesePokerHandEvaluator.new

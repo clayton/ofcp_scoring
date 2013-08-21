@@ -23,7 +23,7 @@ class ChinesePokerHandOrganizer
 
     sorted_ranks.sort!
 
-    build_organized_hand(ranks_only, suits_only, sorted_ranks)
+    OrganizedHand.new(build_organized_hand(ranks_only, suits_only, sorted_ranks))
   end
 
 private

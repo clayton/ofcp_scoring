@@ -1,24 +1,7 @@
 require 'spec_helper'
 
 describe "Ranked Hands" do
-  it "should know the order of poker hands" do
-    expect(RankedHand::RANKINGS).to eq(
-      [
-        "RoyalFlush", "StraightFlush", "FourOfAKind", "FullHouse", "Straight",
-        "ThreeOfAKind", "TwoPair", "Pair", "HighCard"
-      ]
-    )
-  end
-
-  it "should know it's highest card" do
-    sut = HighCard.new({:ranks => [13,12,11,10,5]})
-    expect(sut.highest_card).to eq(13)
-  end
-
-  it "should know use an Ace as the highest card if present" do
-    sut = HighCard.new({:ranks => [1,4,5,6,7]})
-    expect(sut.highest_card).to eq(14)
-  end
+  HandWithRankings = Struct.new(:ranks, :high_card_ace?)
 
   it "should rank Royal Flushes above Straight Flushes" do
     royal_flush = RoyalFlush.new
@@ -42,9 +25,15 @@ describe "Ranked Hands" do
   end
 
   it "should evaluate the highest card when comparing the same rank" do
-    aces = Pair.new({:ranks => [1]})
-    nines = Pair.new({:ranks => [9]})
+    aces = Pair.new(HandWithRankings.new([1], :high_card_ace))
+    nines = Pair.new(HandWithRankings.new([9], false))
 
     expect(aces > nines).to be
+  end
+
+  it "should compare the ranks of two hands when they are different" do
+    sut = RankedHand.new(HandWithRankings.new([13,12,11,10,7], false))
+    other = RankedHand.new(HandWithRankings.new([13,12,11,10,8], false))
+    expect(sut < other).to be
   end
 end

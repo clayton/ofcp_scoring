@@ -2,15 +2,15 @@ class RankedHand
   include Comparable
 
   RANKINGS = [
-    "RoyalFlush", "StraightFlush", "FourOfAKind", "FullHouse", "Straight",
-    "ThreeOfAKind", "TwoPair", "Pair", "HighCard"
+    "HighCard", "Pair", "TwoPair", "ThreeOfAKind", "Straight",
+    "FullHouse", "FourOfAKind", "StraightFlush", "RoyalFlush"
   ]
 
   def <=>(other_hand)
     if self.class == other_hand.class
-       self.highest_card <=> other_hand.highest_card
+      (ranks - (ranks & other_hand.ranks)) <=> (other_hand.ranks - (ranks & other_hand.ranks))
     else
-      RANKINGS.index(other_hand.class.to_s) <=> RANKINGS.index(self.class.to_s)
+       RANKINGS.index(self.class.to_s) <=> RANKINGS.index(other_hand.class.to_s)
     end
   end
 
@@ -18,8 +18,14 @@ class RankedHand
     @hand = hand
   end
 
-  def highest_card
-    return 14 if @hand[:ranks].include?(1)
-    @hand[:ranks].max
+  def ranks
+    ranks = @hand.ranks
+    if @hand.high_card_ace?
+      ranks.delete(1)
+      ranks << 14
+    end
+    ranks.sort
   end
+
+
 end
