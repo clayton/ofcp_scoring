@@ -10,7 +10,7 @@ describe "Evaluator" do
     @sut = ChinesePokerHandEvaluator.new(FakeFactory.new, FakeRoyaltyCalculator.new)
   end
   it "should evaluate the front hands" do
-    expect(@sut.evaluate(ScorableHand.new(1,0,0), ScorableHand.new(0,0,0))).to eq([1,0])
+    expect(@sut.evaluate(ScorableHand.new(1,0,0), ScorableHand.new(0,1,1))).to eq([1,2])
   end
   it "should evaluate the middle hands" do
     expect(@sut.evaluate(ScorableHand.new(1,0,0), ScorableHand.new(0,1,0))).to eq([1,1])

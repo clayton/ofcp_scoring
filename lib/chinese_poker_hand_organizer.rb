@@ -30,8 +30,6 @@ private
   def build_organized_hand(ranks, suits, sorted)
     params = {:ranks => sorted}
 
-    puts ranks.inspect
-
     params.merge!({:two_cards_match => true}) if ranks.values.include?(2)
     params.merge!({:two_different_cards_match => true}) if ranks.find_all{|k,v| v == 2}.size > 1
     params.merge!({:three_cards_match => true}) if ranks.values.include?(3)

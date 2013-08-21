@@ -2,7 +2,7 @@ class RankedHand
   include Comparable
 
   RANKINGS = [
-    "HighCard", "Pair", "TwoPair", "ThreeOfAKind", "Straight",
+    "HighCard", "Pair", "TwoPair", "ThreeOfAKind", "Straight", "Flush",
     "FullHouse", "FourOfAKind", "StraightFlush", "RoyalFlush"
   ]
 
@@ -10,7 +10,7 @@ class RankedHand
     if self.class == other_hand.class
       (ranks - (ranks & other_hand.ranks)) <=> (other_hand.ranks - (ranks & other_hand.ranks))
     else
-       RANKINGS.index(self.class.to_s) <=> RANKINGS.index(other_hand.class.to_s)
+      RANKINGS.index(self.class.to_s) <=> RANKINGS.index(other_hand.class.to_s)
     end
   end
 

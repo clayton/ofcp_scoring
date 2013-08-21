@@ -24,6 +24,13 @@ describe "Ranked Hands" do
     expect(full_house > pair).to be
   end
 
+  it "should rank a Flush over a Pair" do
+    flush = Flush.new
+    pair = Pair.new
+
+    expect(pair < flush).to be
+  end
+
   it "should evaluate the highest card when comparing the same rank" do
     aces = Pair.new(HandWithRankings.new([1], :high_card_ace))
     nines = Pair.new(HandWithRankings.new([9], false))
