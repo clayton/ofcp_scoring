@@ -105,3 +105,13 @@ describe "Hand Categorization" do
   end
 
 end
+
+
+describe "Integration" do
+  it "should categorized unorganized hands correctly" do
+    sut = ChinesePokerHandCategorizer.new
+    # expect(sut.categorize(%w(Ah 4s Qs))).to be_a(HighCard)
+    # expect(sut.categorize(%w(2h 3h 4h 5h 7h))).to be_a(Flush)
+    expect(sut.categorize(%w(Kh Kd Ks 9c 9s))).to be_a(FullHouse)
+  end
+end

@@ -1,3 +1,3 @@
-class Flush
+class Flush < RankedHand
 
 end
