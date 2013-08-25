@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Clayton Lengel-Zigich"]
   spec.email         = ["clayton@claytonlz.com"]
   spec.description   = %q{A scoring engine for Open Face Chinese Poker}
-  spec.summary       = %q{A scoring engine for Open Face Chinese Poker}
+  spec.summary       = %q{A library for evaluating two open face chinese poker hands.}
   spec.homepage      = "http://github.com/clayton/ofcp-scoring"
   spec.license       = "MIT"
 

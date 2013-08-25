@@ -1,5 +1,7 @@
 # Open Face Chinese Poker Scoring
 
+A library for evaluating two open face chinese poker hands.
+
 ## Build Status
 [![Build Status](https://travis-ci.org/clayton/ofcp-scoring.png)](https://travis-ci.org/clayton/ofcp-scoring)
 
