@@ -3,12 +3,12 @@ module Ofcp
     class RoyaltiesCalculator
       MIDDLE = {
         "StraightFlush" => 20, "FourOfAKind" => 16, "FullHouse" => 12,
-        "Ofcp::Scoring::Flush" => 8, "Straight" => 4, "Pair" => 0, "HighCard" => 0
+        "Flush" => 8, "Straight" => 4, "Pair" => 0, "HighCard" => 0
       }
 
       BACK = {
         "RoyalFlush" => 20, "StraightFlush" => 10, "FourOfAKind" => 8,
-        "FullHouse" => 6, "Ofcp::Scoring::Flush" => 4, "Straight" => 2, "Pair" => 0,
+        "FullHouse" => 6, "Flush" => 4, "Straight" => 2, "Pair" => 0,
         "HighCard" => 0
       }
 
@@ -20,15 +20,15 @@ module Ofcp
 
     private
       def calculate_back(hand)
-        BACK[hand.class.to_s]
+        BACK[hand.rank_name]
       end
 
       def calculate_middle(hand)
-        MIDDLE[hand.class.to_s]
+        MIDDLE[hand.rank_name]
       end
 
       def calculate_front(hand)
-        return 0 unless hand.class.to_s == "Pair"
+        return 0 unless hand.rank_name == "Pair"
         bonus_accumulator = 0
         bonus_start = 5
         while hand.ranks.max > bonus_start

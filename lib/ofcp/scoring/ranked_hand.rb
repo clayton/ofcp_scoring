@@ -8,11 +8,12 @@ module Ofcp
         "FullHouse", "FourOfAKind", "StraightFlush", "RoyalFlush"
       ]
 
+      def rank_name
+        self.class.to_s.split("::").last
+      end
+
       def <=>(other_hand)
-        klass = self.class.to_s.split("::").last
-        other_klass = other_hand.class.to_s.split("::").last
-        puts "klass: #{klass} other_klass: #{other_klass}"
-        RANKINGS.index(klass) <=> RANKINGS.index(other_klass) unless klass == other_klass
+        RANKINGS.index(rank_name) <=> RANKINGS.index(other_hand.rank_name) unless rank_name == other_hand.rank_name
       end
 
       def initialize(hand=nil)

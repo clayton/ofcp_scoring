@@ -1,6 +1,10 @@
 require 'spec_helper'
 
-FakeHand = Struct.new(:class, :ranks)
+FakeHand = Struct.new(:class, :ranks) do
+  def rank_name
+    self.class
+  end
+end
 
 describe "Royalties Calculations" do
   before(:each) do
