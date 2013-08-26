@@ -3,15 +3,15 @@
 A library for evaluating two open face chinese poker hands.
 
 ## Build Status
-[![Build Status](https://travis-ci.org/clayton/ofcp-scoring.png)](https://travis-ci.org/clayton/ofcp-scoring)
+[![Build Status](https://travis-ci.org/clayton/ofcp_scoring.png)](https://travis-ci.org/clayton/ofcp_scoring)
 
 ## Getting Started
 
 Without Bundler:
-`gem install ofcp-scoring`
+`gem install ofcp_scoring`
 
 With Bundler:
-Add `gem 'ofcp-scoring'` to your Gemfile
+Add `gem 'ofcp_scoring'` to your Gemfile
 
 ## Basic Usage
 
