@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["clayton@claytonlz.com"]
   spec.description   = %q{Open Face Chinese Poker Scoring}
   spec.summary       = %q{A library to categorize, rank and score open face chinese poker hands with royalties.}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/clayton/ofcp_scoring"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
