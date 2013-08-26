@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ofcp_scoring (0.0.1)
+    ofcp_scoring (0.0.2)
 
 GEM
   remote: https://rubygems.org/
