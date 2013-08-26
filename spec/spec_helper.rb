@@ -21,4 +21,4 @@ RSpec.configure do |config|
   config.order = 'random'
 end
 
-require File.join(File.dirname(__FILE__), '..', 'lib', 'ofcp', 'scoring.rb')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'ofcp_scoring.rb')

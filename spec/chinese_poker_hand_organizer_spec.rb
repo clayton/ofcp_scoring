@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Hand Organizer" do
   it "should return am empty string if no hand is present" do
-    sut = Ofcp::Scoring::HandOrganizer.new
+    sut = OfcpScoring::HandOrganizer.new
     expect(sut.organize(nil)).to eq("")
   end
 end
@@ -10,7 +10,7 @@ end
 describe "Integration" do
   it "should organize hands" do
     hand = %w(Qc Qd Ad 2c 4d)
-    sut = Ofcp::Scoring::HandOrganizer.new
+    sut = OfcpScoring::HandOrganizer.new
     organized = sut.organize(hand)
     expect(organized.two_cards_match?).to be
     expect(organized.two_different_cards_match?).to_not be

@@ -7,7 +7,7 @@ describe "Evaluator" do
   before(:each) do
     @hand_one = %w(Ah Ks Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
     @hand_two = %w(9h 9c Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
-    @sut = Ofcp::Scoring::HandEvaluator.new(FakeFactory.new, FakeRoyaltyCalculator.new)
+    @sut = OfcpScoring::HandEvaluator.new(FakeFactory.new, FakeRoyaltyCalculator.new)
   end
   it "should evaluate the front hands" do
     expect(@sut.evaluate(ScorableHand.new(1,0,0), ScorableHand.new(0,1,1))).to eq([1,2])
@@ -29,8 +29,8 @@ end
 
 describe "Royalties Calculation" do
   it "should add royalties for a hand when it wins" do
-    royalty_calc = double(Ofcp::Scoring::RoyaltiesCalculator, :calculate_bonus => 0)
-    sut = Ofcp::Scoring::HandEvaluator.new(FakeFactory.new, royalty_calc)
+    royalty_calc = double(OfcpScoring::RoyaltiesCalculator, :calculate_bonus => 0)
+    sut = OfcpScoring::HandEvaluator.new(FakeFactory.new, royalty_calc)
     royalty_calc.should_receive(:calculate_bonus).once.with(1, :front)
     royalty_calc.should_receive(:calculate_bonus).once.with(1, :middle)
     royalty_calc.should_receive(:calculate_bonus).once.with(1, :back)
@@ -38,9 +38,9 @@ describe "Royalties Calculation" do
   end
 
   it "should add the royalties for the first hand to its score" do
-    royalty_calc = Ofcp::Scoring::RoyaltiesCalculator.new
+    royalty_calc = OfcpScoring::RoyaltiesCalculator.new
     royalty_calc.stub(:calculate_bonus).and_return(10)
-    sut = Ofcp::Scoring::HandEvaluator.new(FakeFactory.new, royalty_calc)
+    sut = OfcpScoring::HandEvaluator.new(FakeFactory.new, royalty_calc)
     expect(sut.evaluate(ScorableHand.new(1,0,1), ScorableHand.new(0,1,0))).to eq([22,11])
   end
 
@@ -51,7 +51,7 @@ describe "Integration" do
     @hand_one = %w(Ah Ks Qs 8s 8d 7d 6c 4h Jc Jd Ad 2c 4d)
     @hand_two = %w(9h 6c Qs 10s 10d 7d 6c 8h Qc Qd Ad 2c 4d)
 
-    sut = Ofcp::Scoring::HandEvaluator.new
+    sut = OfcpScoring::HandEvaluator.new
     expect(sut.evaluate(@hand_one, @hand_two)).to eq([1,2])
   end
 end

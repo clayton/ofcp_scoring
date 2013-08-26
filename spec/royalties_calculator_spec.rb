@@ -8,7 +8,7 @@ end
 
 describe "Royalties Calculations" do
   before(:each) do
-    @sut = Ofcp::Scoring::RoyaltiesCalculator.new
+    @sut = OfcpScoring::RoyaltiesCalculator.new
   end
   describe "For Front Hands" do
     it "should give an extra point for a pair of sixes" do
@@ -79,7 +79,7 @@ end
 # 10 for StraightFlush
 # 8 for Quads
 # 6 for a Full House
-# 4 for a Ofcp::Scoring::Flush
+# 4 for a OfcpScoring::Flush
 # 2 for a Straight
 # (Some players might play 10 for Quads, 15 for a StraightFlush, and 25 for a Royal, so it is wise to agree the Royalites system beforehand just in case)
 
@@ -88,7 +88,7 @@ end
 # 20 for StraightFlush
 # 16 for Quads
 # 2 for a Full House
-# 8 for a Ofcp::Scoring::Flush
+# 8 for a OfcpScoring::Flush
 # 4 for a Straight
 # You receive the following points for Front hands (the 3 card hand):
 

@@ -20,7 +20,7 @@ royalties and scoop bonuses.
 
 Example:
 
-    engine = Ofcp::Scoring::ScoringEngine.new
+    engine = OfcpScoring::ScoringEngine.new
     engine.score(
       %w(2h 3h 5h 10d 10h 4h 7c 8s Jd Js 6c 7d 9c),
       %w(Ah 3h 5h 6d 6h 4h 7c 8s Qd Qs 6c 7d 9c)
@@ -35,7 +35,7 @@ With Royalties you receive the following points for Back hands:
 * 10 for StraightFlush
 * 8 for Quads
 * 6 for a Full House
-* 4 for a Ofcp::Scoring::Flush
+* 4 for a OfcpScoring::Flush
 * 2 for a Straight
 
 You receive the following points for Middle hands:
@@ -43,7 +43,7 @@ You receive the following points for Middle hands:
 * 20 for StraightFlush
 * 16 for Quads
 * 2 for a Full House
-* 8 for a Ofcp::Scoring::Flush
+* 8 for a OfcpScoring::Flush
 * 4 for a Straight
 
 You receive the following points for Front hands (the 3 card hand):
