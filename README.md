@@ -35,7 +35,7 @@ With Royalties you receive the following points for Back hands:
 * 10 for StraightFlush
 * 8 for Quads
 * 6 for a Full House
-* 4 for a OfcpScoring::Flush
+* 4 for a Flush
 * 2 for a Straight
 
 You receive the following points for Middle hands:
@@ -43,7 +43,7 @@ You receive the following points for Middle hands:
 * 20 for StraightFlush
 * 16 for Quads
 * 2 for a Full House
-* 8 for a OfcpScoring::Flush
+* 8 for a Flush
 * 4 for a Straight
 
 You receive the following points for Front hands (the 3 card hand):
