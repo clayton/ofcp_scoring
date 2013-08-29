@@ -15,6 +15,12 @@ describe "Integration" do
     expect(organized.two_cards_match?).to be
     expect(organized.two_different_cards_match?).to_not be
     expect(organized.ranks).to eq([1,2,4,12,12])
-    expect(organized.suits).to eq({"c"=>2, "d"=>3})
+  end
+
+  it "should know the suits of the cards" do
+    hand = %w(10c 10d 10h 10s As)
+    sut = OfcpScoring::HandOrganizer.new
+    organized = sut.organize(hand)
+    expect(organized.suits).to eq({"c"=>1, "d"=>1, "h" => 1, "s" => 2})
   end
 end

@@ -6,7 +6,7 @@ class OfcpScoring::HandOrganizer
     sorted_ranks = []
     hand.each do |card|
       ranks_only[card[0..-2]] += 1
-      suits_only[card[1]] += 1
+      suits_only[card.match(/[s,c,d,h]/)[0]] += 1
       case card[0]
       when "A"
         sorted_ranks << 1
