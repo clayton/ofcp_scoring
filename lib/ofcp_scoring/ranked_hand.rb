@@ -23,6 +23,10 @@ class OfcpScoring::RankedHand
     ranks.map{|r| r == 1 ? 14 : r}.sort
   end
 
+  def suits
+    suits = @hand.suits
+  end
+
   def grouped_ranks
     ranks.group_by{|card| card }
   end
