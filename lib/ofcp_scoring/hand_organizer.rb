@@ -28,7 +28,7 @@ class OfcpScoring::HandOrganizer
 
 private
   def build_organized_hand(ranks, suits, sorted)
-    params = {:ranks => sorted}
+    params = {:ranks => sorted, :suits => suits}
 
     params.merge!({:two_cards_match => true}) if ranks.values.include?(2)
     params.merge!({:two_different_cards_match => true}) if ranks.find_all{|k,v| v == 2}.size > 1

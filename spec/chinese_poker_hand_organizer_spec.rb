@@ -15,5 +15,6 @@ describe "Integration" do
     expect(organized.two_cards_match?).to be
     expect(organized.two_different_cards_match?).to_not be
     expect(organized.ranks).to eq([1,2,4,12,12])
+    expect(organized.suits).to eq({"c"=>2, "d"=>3})
   end
 end

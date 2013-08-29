@@ -7,6 +7,10 @@ class OfcpScoring::OrganizedHand
     @hand[:ranks]
   end
 
+  def suits
+    @hand[:suits]
+  end
+
   def two_cards_match?
     @hand[:two_cards_match]
   end
