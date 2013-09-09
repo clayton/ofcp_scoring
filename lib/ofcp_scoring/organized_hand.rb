@@ -1,10 +1,21 @@
 class OfcpScoring::OrganizedHand
+  include Enumerable
+
   def initialize(organized_hand)
     @hand = organized_hand
   end
 
   def ranks
     @hand[:ranks]
+  end
+
+  def sequences
+    ranks = @hand[:ranks].reverse
+    prev = ranks[0]
+    ranks.slice_before { |cur|
+      prev, prev2 = cur, prev
+      prev2 - 1 != prev
+    }.to_a
   end
 
   def suits
